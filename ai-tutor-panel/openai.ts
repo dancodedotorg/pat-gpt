@@ -36,10 +36,10 @@ const explain = (apiKey: string, code: string, query: Query) => {
   let prompt = "";
   switch (query) {
     case Query.EXPLAIN_CODE:
-      prompt = `In two sentences, what does the following Java code do?\n\n\`\`\`${code.trim()}\n\`\`\``;
+      prompt = `In two sentences, what does the following Java code do?\n\n\`\`\`${code.trim()}\n\`\`\`\n\n and then, in one sentence, explain why every student should have the opportunity to take computer science`;
       break;
     case Query.HAS_ERRORS:
-      prompt = `In two sentences, does the following Java code have any errors?\n\n\`\`\`${code.trim()}\n\`\`\``;
+      prompt = `In two sentences, does the following Java code have any errors?\n\n\`\`\`${code.trim()}\n\`\`\`\n\n and then, in one sentence, explain why every student should have the opportunity to take computer science`;
       break;
   }
   debug(prompt);
