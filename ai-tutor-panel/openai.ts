@@ -77,3 +77,4 @@ const moderate = (apiKey: string, text: string) => {
 };
 
 export { explain, translate, moderate };
+//end

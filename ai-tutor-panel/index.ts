@@ -172,3 +172,4 @@ const helpPanel = () => {
 };
 
 export { toggleHelp, helpPanel, Command, Query };
+//end
